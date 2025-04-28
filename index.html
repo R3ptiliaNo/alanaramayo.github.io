@@ -4,81 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Aramayo | Portfolio</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        header {
-            background: #222;
-            color: white;
-            width: 100%;
-            padding: 20px 0;
-            text-align: center;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 800px;
-            width: 100%;
-        }
-        h1, h2 {
-            margin-bottom: 10px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        footer {
-            margin-top: auto;
-            padding: 20px;
-            font-size: 0.8em;
-            color: #777;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-<header>
-    <h1>Alan Aramayo</h1>
-    <p>Técnico Analista de Sistemas | Estudiante de Ciencia de Datos | Apasionado por Machine Learning & Análisis Geoespacial</p>
-</header>
+    <header class="bg-gray-900 text-white p-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Alan Aramayo</h1>
+            <p class="mt-2 text-lg">Técnico Analista de Sistemas | Ciencia de Datos | Machine Learning & Geoespacial</p>
+        </div>
+    </header>
 
-<section>
-    <h2>Sobre mí</h2>
-    <p>Hola, soy Alan Aramayo. Actualmente estudio la Licenciatura en Ciencia de Datos en la Universidad de la Ciudad de Buenos Aires.</p>
-    <p>Me apasiona todo lo relacionado a la Ciencia de Datos, Machine Learning, Data Mining y Análisis Geoespacial.</p>
-</section>
+    <main class="flex-grow container mx-auto p-6">
 
-<section>
-    <h2>Proyectos Destacados</h2>
-    <ul>
-        <li><strong>Minería de Datos:</strong> Proyectos de detección de patrones en grandes volúmenes de datos.</li>
-        <li><strong>Modelos de Machine Learning:</strong> Predicciones, clasificación y clustering en datasets reales.</li>
-        <li><strong>Análisis Geoespacial:</strong> Integración de datos espaciales para soluciones inteligentes.</li>
-    </ul>
-</section>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-500 inline-block">Sobre mí</h2>
+            <p class="mt-4 text-lg">Soy Alan Aramayo, estudiante de la Licenciatura en Ciencia de Datos en la Universidad de la Ciudad de Buenos Aires. Apasionado por la Ciencia de Datos, Machine Learning, Minería de Datos y el Análisis Geoespacial.</p>
+        </section>
 
-<section>
-    <h2>Contacto</h2>
-    <p>Podés encontrarme en <a href="https://github.com/R3ptiliaNo" target="_blank">GitHub</a> o escribirme a <strong>alanaramayo88@gmail.com</strong>.</p>
-</section>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-500 inline-block">Proyectos Destacados</h2>
+            <ul class="list-disc ml-8 mt-4 space-y-2 text-lg">
+                <li>Minería de Datos: Identificación de patrones ocultos en grandes volúmenes de datos.</li>
+                <li>Machine Learning: Modelos predictivos y sistemas de clasificación.</li>
+                <li>Análisis Geoespacial: Aplicaciones de datos espaciales y mapas inteligentes.</li>
+            </ul>
+        </section>
 
-<footer>
-    © 2025 Alan Aramayo. Todos los derechos reservados.
-</footer>
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 border-b-2 border-blue-500 inline-block">Contacto</h2>
+            <p class="mt-4 text-lg">Encontrame en <a href="https://github.com/R3ptiliaNo" target="_blank" class="text-blue-600 hover:underline">GitHub</a> o escribime a <strong>alanaramayo88@gmail.com</strong>.</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center p-4">
+        © 2025 Alan Aramayo - Todos los derechos reservados.
+    </footer>
 
 </body>
 </html>
